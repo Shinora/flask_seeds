@@ -1,0 +1,115 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1543202630-0b2aa650665f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    
+}
+
+title{
+    text-align: center;
+    color: #9DABF0;
+    text-decoration: #BE2B4E;
+
+}
+
+h1{
+    text-align: center;
+    color: #9DABF0;
+
+}
+
+h2{
+
+    text-align: center;
+}
+.common_header{
+    text-align: center;
+    color: black;
+    margin: none;
+    padding: 0px;
+    opacity: 100%;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.links{
+    color: black;
+}
+
+
+.flash_messages{
+    font-size: medium;
+    color: #CF3F3D;
+    font-style: oblique;
+
+}
+
+a{
+    border: 2px solid #9DABF0;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 140%;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color: #9DABF0;
+
+}
+
+.plant{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    background-color: #9DABF0;
+    background-attachment: local;
+}
+
+.flower_text{
+    
+    justify-content: left;
+    float: right;
+    text-align: left;
+    
+}
+
+.connect{
+    display: inline;
+    text-align: right;
+}
+
+b{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+ul{
+    text-align: left;
+}
+
+img{
+    image-rendering: optimizeQuality;
+}
+
+.description{
+    text-align: center;
+    
+    color: #f6e5e9;
+}
+
+.icons{
+    text-align: end;
+}
+
+.interest_button{
+    width: 60px;
+    height: 40px;
+}

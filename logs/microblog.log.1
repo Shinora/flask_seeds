@@ -1,0 +1,93 @@
+2020-04-22 19:02:47,311 ERROR: Exception on /add_plant [POST] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 115, in add_plant
+    image_file = save_picture(form.image.data)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 105, in save_picture
+    i.save(picture_path)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\PIL\Image.py", line 2131, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\simon\\Documents\\Code\\Python\\Flask_projects\\Graines\\static\\flowers\\dd880065d2f93639.jpg'
+2020-04-23 17:01:09,603 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 00:57:02,636 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 12:04:19,737 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 12:04:36,428 ERROR: Exception on /admin_pannel [GET] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 137, in clean
+    db.remove(plant)
+AttributeError: 'SQLAlchemy' object has no attribute 'remove'
+2020-04-24 12:05:55,167 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 12:06:03,426 ERROR: Exception on /admin_pannel [GET] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 137, in clean
+    db.remove(plant)
+AttributeError: 'SQLAlchemy' object has no attribute 'remove'
+2020-04-24 12:06:57,347 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 12:07:05,951 ERROR: Exception on /admin_pannel [GET] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 137, in clean
+    db.remove(plant)
+AttributeError: 'SQLAlchemy' object has no attribute 'remove'
+2020-04-24 12:12:05,483 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 15:53:03,477 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 15:54:12,226 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 15:59:00,554 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 16:22:28,286 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 18:05:09,308 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-24 23:19:42,378 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-25 00:28:44,289 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]

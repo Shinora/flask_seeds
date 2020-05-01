@@ -1,0 +1,99 @@
+2020-04-21 23:42:56,704 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-21 23:43:05,874 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-21 23:43:16,738 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-21 23:43:24,295 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-21 23:44:36,951 ERROR: Exception on /user/simon [GET] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 74, in user
+    return render_template('user.html', title= 'Profil', user=user, posts=posts)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\templates\user.html", line 6, in block "content"
+    <td><img src="{{ user.avatar(128) }}"></td>
+jinja2.exceptions.UndefinedError: 'app.models.User object' has no attribute 'avatar'
+2020-04-22 12:12:04,802 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:12:37,971 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:14:28,942 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:15:51,757 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:16:09,807 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:16:49,610 ERROR: Exception on /add_plant [POST] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 110, in add_plant
+    image_file = save_image(form.image.data)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 100, in save_image
+    form_picture.save(picture_path)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\werkzeug\datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\simon\\Documents\\Code\\Python\\Flask_projects\\Graines\\app\\static/images\\e786706031c6e65a.jpg'
+2020-04-22 12:18:15,658 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:18:29,952 ERROR: Exception on /add_plant [POST] [in c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 110, in add_plant
+    image_file = save_image(form.image.data)
+  File "C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\routes.py", line 100, in save_image
+    form_picture.save(picture_path)
+  File "c:\users\simon\documents\code\python\flask_projects\graines\venv\lib\site-packages\werkzeug\datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\simon\\Documents\\Code\\Python\\Flask_projects\\Graines\\app\\static/images\\ecda8f434b7aa44b.jpg'
+2020-04-22 12:20:40,129 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 12:20:51,221 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 18:45:40,490 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 18:52:18,625 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 18:56:02,218 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 18:59:03,843 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 19:01:52,154 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]
+2020-04-22 19:02:20,701 INFO: Graines startup [in C:\Users\simon\Documents\Code\Python\Flask_projects\Graines\app\__init__.py:43]

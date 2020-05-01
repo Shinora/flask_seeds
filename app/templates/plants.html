@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> Nos fleurs & plantes</h1>
+<div class="description">
+    <p>Coucou, {{ current_user.username }}!</p>
+    <h2>Voici les plantes et fleurs qui ont été enregistrées sur le site, cliquez sur l'une d'entre elle pour obtenir plus d'informations ! <br></h2>
+    <p>Vous pouvez aussi voir si certains utilisateurs possedent des graines qui vous interessent</p>
+</div>
+    {% for plant in plants %}
+    <ul>
+    <span class="plant">
+    <img class="plant_catalog_image" src="{{ (image_path / plant.image_file).as_posix() }}"> 
+    <span class="flower_text">
+        <h3>
+            <b>
+                {{ plant.name }}
+            </b>
+        </h3> 
+        <p>
+        {{ plant.description }}
+        </p>
+    </span>
+    <div class="interest_button">
+    <!--{{ form.want() }}-->
+    </div>
+    <span class="icons">
+        
+        <button onclick=""><img src="static/icons/bell-plus.svg"></button>
+        <button onclick=""><img src="static/icons/bell-remove.svg"></button>
+        <button onclick=""><img src="static/icons/bookmark-plus.svg"></button>
+        <button onclick=""><img src="static/icons/bookmark-remove.svg"></button>
+    </span>
+    </span>
+    </ul>
+    
+        
+    {% endfor %}
+    
+{% endblock %}
